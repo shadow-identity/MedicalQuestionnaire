@@ -1,11 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
+import { hads } from './examples/hads';
+import Questionnaire from './Questionnaire';
 
 ReactDOM.render(
-  <App />,
+  <Questionnaire questionnaire={hads} />,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
